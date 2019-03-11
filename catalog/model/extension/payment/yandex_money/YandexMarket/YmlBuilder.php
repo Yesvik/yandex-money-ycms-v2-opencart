@@ -284,8 +284,8 @@ class YmlBuilder
     protected function addTag($tag, $value, $attributes = array())
     {
         $result = '<' . $tag;
-        foreach ($attributes as $attr => $value) {
-            $result .= ' ' . $attr . '="' . $value . '"';
+        foreach ($attributes as $attr => $val) {
+            $result .= ' ' . $attr . '="' . $val . '"';
         }
         $result .= '>' . $value . '</' . $tag . '>' . PHP_EOL;
         return $result;
